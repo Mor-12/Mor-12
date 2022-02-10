@@ -1,0 +1,10 @@
+document.faloo_login.backurl.value = backurl;
+var time_stamp =1576728829;//  get_timestamp();
+document.faloo_login.ts.value = time_stamp;
+pwd = login_md5(pwd, time_stamp);
+document.faloo_login.txtPwd.value = pwd;
+document.faloo_login.txtPwd4temp.value = "";
+document.faloo_login.action = "Login.aspx?t=2&BackUrl=" + backurl + "&ran=" + Math.random();
+document.faloo_login.method = "get";
+document.faloo_login.submit();
+document.faloo_login.txtPwd4temp.value = pwd4temp;
